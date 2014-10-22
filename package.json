@@ -1,0 +1,25 @@
+{
+  "name": "Shard",
+  "version": "0.0.0",
+  "description": "",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "handlebars": "~1.0.12",
+    "hbsfy": "~1.0.0",
+    "grunt-contrib-handlebars": "~0.6.0",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-less": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "browserify": "^4.2.3",
+    "grunt-browserify": "^2.1.3"
+  },
+  "dependencies": {
+    "bluebird": "^1.2.4",
+    "grunt-browserify": "^3.0.1"
+  }
+}
