@@ -99,10 +99,6 @@ Connection.prototype._callHandler = function (event) {
 			call = null;
         });
 	}
-	// if (this.mute) {
-	// 	debugger;
-	// 	this.client.calls[0].outgoingMedia.muteAudio();
-	// }
 };
 
 Connection.prototype.startCall = function (endpointId) {

@@ -1,19 +1,7 @@
 body {
   font-family: Arial, Helvetica;
-  margin-left: 25px;
   background-color: #27566B;
-}
-#messages {
-  height: 200px;
-  width: 400px;
-  border: 1px solid #c7c7c7;
-  overflow-x: hidden;
-  overflow-y: auto;
-  padding: 5px;
-}
-#textToSend {
-  width: 400px;
-  padding: 5px;
+  text-align: center;
 }
 #containingBlock {
   width: 100%;
@@ -24,13 +12,35 @@ body {
   width: 50%;
   height: 100%;
 }
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 .role {
   display: inline-block;
-  width: 95%;
-  height: 95%;
+  width: 99%;
+  height: 100%;
   background-color: #AA4F39;
   text-align: center;
   border: 2px solid #AA8A39;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-size: 60px;
+}
+.role-small {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background-color: #AA4F39;
+  text-align: center;
+  border: 2px solid #AA8A39;
+  box-sizing: border-box;
   border-radius: 25px;
   font-size: 60px;
 }
@@ -39,8 +49,26 @@ body {
   vertical-align: middle;
   line-height: 380px;
 }
+.centered-small {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 150px;
+  color: white;
+}
 a,
 a:visited {
+  font-size: 60px;
+  color: white;
+}
+.statusBlock {
+  display: inline-block;
+  width: 100%;
+  height: 150px;
+  background-color: #AA4F39;
+  text-align: center;
+  border: 2px solid #AA8A39;
+  box-sizing: border-box;
+  border-radius: 25px;
   font-size: 60px;
   color: white;
 }
