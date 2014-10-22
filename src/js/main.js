@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    var appid = "7441f4c7-76b2-49ad-ad62-f40957eeab88";
+	var credentials = require('./credentials.json');
+    var appid = credentials.appid;
     var call = null;
 
     // create a client object using the App ID value from Step 2

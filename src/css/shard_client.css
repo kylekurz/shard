@@ -1,7 +1,8 @@
 body {
     font-family: Arial, Helvetica;
     margin-left: 25px;
-        }
+    background-color: #27566B;
+}
 
 #messages {
     height: 200px;
@@ -15,4 +16,26 @@ body {
 #textToSend {
     width: 400px;
     padding: 5px;
+}
+
+.role {
+    //display: inline-block;
+    width: 400px;
+    height: 400px;
+    background-color: #AA4F39;
+    text-align: center;
+    border: 2px solid #AA8A39;
+    border-radius: 25px;
+    font-size: 60px;
+}
+
+.centered {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 400px;
+}
+
+a, a:visited {
+    font-size: 60px;
+    color: white;
 }

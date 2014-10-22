@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script type='text/javascript' src='http://cdn.respoke.io/respoke.min.js'></script>
-        <script type='text/javascript' src='http://code.jquery.com/jquery-2.1.0.min.js'></script>
-        <script type='text/javascript' src='lib/main.js'></script>
-        <link rel="stylesheet" type="text/css" src='lib/main.css' />
+        <link rel="stylesheet" type="text/css" href="lib/main.css" >
     </head>
     <body>
-        <h3 id="status">Not Connected</h3>
-        <div id="login">
-            User Name:
-            <input id="endpoint" type="text" />
-            <input id="doLogin" type="button" value="Connect" />
-        </div>
-        <div id="messaging">
-            <ul id="messages"></ul><br />
-            Send To:
-            <input id="remoteId" type="text" /><br />
-            <textarea id="textToSend" rows="2"></textarea><br />
-            <input id='sendMessage' type='button' value='Send Message' />
-            <input id='makeCall' type='button' value='Audio Call' />
-            <input id='endCall' type='button' value='Hang Up' />
-        </div>
+        <a href="client.html" id="clientLink">
+            <div id="client-role" class="role">
+                <span class="centered">Client</span>
+            </div>
+        </a>
+        </br>
+        <a href="server.html" id="serverLink">
+            <div id="server-role" class="role">
+                <span class="centered">Server</span>
+            </div>
+        </a>
     </body>
 </html>
 

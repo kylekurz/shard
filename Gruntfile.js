@@ -11,11 +11,22 @@ module.exports = function(grunt) {
                 src: 'src/js/main.js',
                 dest: 'lib/main.js',
                 options: browserifyOpts
-            }
+            },
+			client : {
+				src: 'src/js/client.js',
+				dest: 'lib/client.js',
+				options: browserifyOpts
+			},
+			server : {
+				src: 'src/js/server.js',
+				dest: 'lib/server.js',
+				options: browserifyOpts
+			}
+
         },
         watch : {
             js : {
-                tasks : ['browserify:js'],//, 'browserify:communicationsLayer'],
+                tasks : ['browserify'],//, 'browserify:communicationsLayer'],
                 files : [
 					'src/js/*.js',
 					'src/js/**/*.js',
@@ -28,7 +39,7 @@ module.exports = function(grunt) {
 			},
 			css : {
 				tasks : ['less:main'],
-				files : ['src/css/**/*.less']
+				files : ['src/css/**/*.css','src/css/**/*.less']
 			}
         },
         uglify : {
